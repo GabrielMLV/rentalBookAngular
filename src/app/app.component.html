@@ -1,0 +1,28 @@
+
+<!-- Toolbar -->
+<nav class="uk-navbar uk-navbar-container uk-margin">
+  <div class="uk-navbar-left">
+      <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav">
+          <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+      </a>
+  </div>
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar">
+
+      <ul class="uk-nav uk-nav-default">
+          <li class="uk-nav-header">MENU</li>
+          <li><a href="" [routerLink]="['/dashboard']"><span class="uk-margin-small-right" uk-icon="icon: table" ></span> Dashboard</a></li>
+          <li><a href="" [routerLink]="['/client']"><span class="uk-margin-small-right" uk-icon="icon: user" ></span> Clientes</a></li>
+          <li><a href="" [routerLink]="['/book']"><span class="uk-margin-small-right" uk-icon="icon: bookmark" ></span> Livros</a></li>
+      </ul>
+
+  </div>
+</div>
+
+
+    <router-outlet></router-outlet>
+  
+
+
